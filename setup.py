@@ -10,6 +10,12 @@ setup(
         'Pillow>=8.0.0',
         'img2pdf>=0.4.0',
     ],
+    extras_require={
+        'dev': [
+            'pytest>=6.0.0',
+            'pytest-cov>=2.0.0',
+        ],
+    },
     author="Michał Durski",
     description="A document scanning and processing tool",
     keywords="document, scanner, opencv, image processing",
