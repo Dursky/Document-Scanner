@@ -6,7 +6,7 @@ from pdf2image import convert_from_path
 import tempfile
 from PIL import Image
 import io
-import fitz
+
 
 class PDFExporter:
     def __init__(self, output_dir='../test_data/output'):
