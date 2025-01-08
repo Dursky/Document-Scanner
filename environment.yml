@@ -1,0 +1,19 @@
+name: docscanner
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - python-fitz
+  - pymupdf
+  - pytesseract
+  - fpdf2
+  - opencv
+  - matplotlib
+  - pillow
+  - numpy
+  - pip
+  - pip:
+      - libjpeg-turbo

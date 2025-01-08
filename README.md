@@ -10,7 +10,16 @@
 - JSON metadata output
 - Optimized for macOS
 
-## 🔧 Installation
+## 🔧 Installation by environment.yml
+
+Using environment.yml:
+
+```bash
+conda env create -f environment.yml
+conda activate docscanner
+```
+
+## 🔧 Installation manually
 
 ```bash
 # Create conda environment
@@ -18,9 +27,8 @@ conda create -n docscanner python=3.11
 conda activate docscanner
 
 # Install required packages
-conda install -c conda-forge pytorch torchvision
-conda install -c conda-forge python-fitz PyMuPDF pytesseract
-conda install fpdf2 opencv matplotlib
+conda install -c conda-forge pytorch torchvision python-fitz pymupdf pytesseract fpdf2 opencv matplotlib pillow numpy
+conda install -c conda-forge libjpeg-turbo
 ```
 
 ## 📁 Project Structure

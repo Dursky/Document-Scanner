@@ -221,7 +221,7 @@ if __name__ == "__main__":
     group.add_argument("--image", help="Path to single image to be scanned")
 
     args = vars(ap.parse_args())
-    scanner = DocScanner(args["i"])
+    scanner = DocScanner(args["image"])
 
     if args["image"]:
         scanner.scan(args["image"])
