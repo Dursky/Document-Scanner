@@ -218,9 +218,7 @@ class DocScanner(object):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     group = ap.add_mutually_exclusive_group(required=True)
-    group.add_argument("--images", help="Directory of images to be scanned")
     group.add_argument("--image", help="Path to single image to be scanned")
-    ap.add_argument("-i", action='store_true', help="Flag for manual corner verification")
 
     args = vars(ap.parse_args())
     scanner = DocScanner(args["i"])
